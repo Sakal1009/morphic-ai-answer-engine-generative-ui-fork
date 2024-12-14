@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
         </Button> */}
         <Button
           variant={'outline'}
-          size={'icon'}
+          // size={'icon'}
           className="text-muted-foreground/50"
         >
           <Link href="https://solange.io" target="_blank">

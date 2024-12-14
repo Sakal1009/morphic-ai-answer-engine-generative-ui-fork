@@ -57,6 +57,7 @@ export default function RootLayout({
         >
           <AppStateProvider>
             <Header />
+            <img src="/favicon.png" className="w-40 h-40" />
             {children}
             <Sidebar />
             <Footer />
