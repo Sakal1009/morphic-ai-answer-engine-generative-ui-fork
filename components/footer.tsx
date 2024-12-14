@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
         >
           <Link href="https://solange.io" target="_blank">
             {/* <SiGithub size={18} /> */}
-            {'Back to web >'}
+            {'>'}
           </Link>
         </Button> 
       </div>
