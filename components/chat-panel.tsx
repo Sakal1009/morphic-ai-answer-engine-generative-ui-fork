@@ -155,10 +155,10 @@ export function ChatPanel({ messages, query, onModelChange }: ChatPanelProps) {
         'fixed bottom-8 left-0 right-0 top-10 mx-auto h-screen flex flex-col items-center justify-center'
       }
     >
-      <div className="w-full flex justify-center items-center">
-        <img src="/favicon.png" className="w-40 h-40" />
-      </div>
       <form onSubmit={handleSubmit} className="max-w-2xl w-full px-6">
+        <div className="w-full flex justify-center items-center">
+          <img src="/favicon.png" className="w-40 h-40" />
+        </div>
         <div className="relative flex items-center w-full">
           <ModelSelector
             selectedModelId={selectedModelId}
