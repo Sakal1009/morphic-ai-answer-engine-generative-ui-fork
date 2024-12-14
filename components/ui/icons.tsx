@@ -21,9 +21,9 @@ function IconLogo({ className, ...props }: IconLogoProps) {
     // </svg>
     <img
       src="/favicon.png"
-      className={cn('w-10 h-10', className)}
+      className={cn('w-20 h-20', className)}
       alt="favicon"
-      {...props}
+    // {...props}
     />
   )
 }

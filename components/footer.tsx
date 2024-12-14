@@ -37,13 +37,13 @@ const Footer: React.FC = () => {
         <Button
           variant={'ghost'}
           size={'icon'}
-          className="text-muted-foreground/50"
+          className="text-muted-foreground/50 w-8"
         >
           <Link href="https://solange.io" target="_blank">
             {/* <SiGithub size={18} /> */}
-            {'>'}
+            {'Back to web>'}
           </Link>
-        </Button> 
+        </Button>
       </div>
     </footer>
   )
