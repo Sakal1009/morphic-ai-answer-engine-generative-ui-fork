@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </Link>
         </Button> */}
         <Button
-          variant={'outline'}
+          variant={'link'}
           // size={'icon'}
           className="text-muted-foreground/50"
         >

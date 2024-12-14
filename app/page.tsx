@@ -8,6 +8,7 @@ export default function Page() {
   const id = generateId()
   return (
     <AI initialAIState={{ chatId: id, messages: [] }}>
+      <img src="/favicon.png" className="w-40 h-40" />
       <Chat id={id} />
     </AI>
   )
