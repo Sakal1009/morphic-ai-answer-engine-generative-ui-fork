@@ -2,9 +2,11 @@
 
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
+import { cn } from '@/lib/utils'
 import { ChatPanel } from './chat-panel'
 import { ChatMessages } from './chat-messages'
 import { useUIState } from 'ai/rsc'
+import { IconLogo } from './ui/icons'
 
 type ChatProps = {
   id?: string
@@ -23,6 +25,9 @@ export function Chat({ id, query }: ChatProps) {
 
   return (
     <div className="px-8 sm:px-12 pt-12 md:pt-14 pb-14 md:pb-24 max-w-3xl mx-auto flex flex-col space-y-3 md:space-y-4">
+      <div>
+        <IconLogo className={cn('w-5 h-5')} />
+      </div>
       <ChatMessages messages={messages} />
       <ChatPanel messages={messages} query={query} />
     </div>
