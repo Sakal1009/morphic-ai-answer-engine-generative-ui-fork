@@ -16,7 +16,7 @@ function IconLogo({ className, ...props }: React.ComponentProps<'svg'>) {
     //   <circle cx="102" cy="128" r="18" fill="white"></circle>
     //   <circle cx="154" cy="128" r="18" fill="white"></circle>
     // </svg>
-    <img src="/favicon.png" className="w-4 h-4"/>
+    <></>
   )
 }
 

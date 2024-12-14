@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { SiDiscord, SiGithub, SiX, SiLibretube } from 'react-icons/si'
+import { SiDiscord, SiGithub, SiX } from 'react-icons/si'
 import { Button } from './ui/button'
 
 const Footer: React.FC = () => {
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
         >
           <Link href="https://solange.io" target="_blank">
             {/* <SiGithub size={18} /> */}
-            <SiLibretube size={18}/>
+            {'Back to web >'}
           </Link>
         </Button> 
       </div>
