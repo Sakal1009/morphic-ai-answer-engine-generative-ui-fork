@@ -2,6 +2,8 @@
 
 import { StreamableValue } from 'ai/rsc'
 import type { UIState } from '@/app/actions'
+import { cn } from '@/lib/utils'
+import { IconLogo } from './ui/icons'
 import { CollapsibleMessage } from './collapsible-message'
 
 interface ChatMessagesProps {
@@ -47,6 +49,7 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
 
   return (
     <>
+      <IconLogo className={cn('w-20 h-20')} />
       {groupedMessagesArray.map((groupedMessage: GroupedMessage) => (
         <CollapsibleMessage
           key={`${groupedMessage.id}`}
