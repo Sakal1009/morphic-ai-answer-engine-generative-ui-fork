@@ -49,7 +49,6 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
 
   return (
     <>
-      <IconLogo className={cn('w-20 h-20')} />
       {groupedMessagesArray.map((groupedMessage: GroupedMessage) => (
         <CollapsibleMessage
           key={`${groupedMessage.id}`}
