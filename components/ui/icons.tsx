@@ -1,8 +1,11 @@
 'use client'
-
 import { cn } from '@/lib/utils'
 
-function IconLogo({ className, ...props }: React.ComponentProps<'svg'>) {
+type IconLogoProps = React.ComponentProps<'img'> & {
+  className?: string
+}
+
+function IconLogo({ className, ...props }: IconLogoProps) {
   return (
     // <svg
     //   fill="currentColor"
@@ -16,7 +19,12 @@ function IconLogo({ className, ...props }: React.ComponentProps<'svg'>) {
     //   <circle cx="102" cy="128" r="18" fill="white"></circle>
     //   <circle cx="154" cy="128" r="18" fill="white"></circle>
     // </svg>
-    <></>
+    <img
+      src="/favicon.png"
+      className={cn('w-4 h-4', className)}
+      alt="favicon"
+      {...props}
+    />
   )
 }
 

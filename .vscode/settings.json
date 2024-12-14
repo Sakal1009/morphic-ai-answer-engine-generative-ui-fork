@@ -4,5 +4,8 @@
     "cSpell.words": [
         "openai",
         "Tavily"
-    ]
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }
